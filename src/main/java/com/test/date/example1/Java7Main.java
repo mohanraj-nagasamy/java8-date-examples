@@ -125,9 +125,9 @@ public class Java7Main {
 
         zonedDateTime = DateTime.now();
         System.out.println("zonedDateTime with default(system) timezone = " + zonedDateTime);
-        System.out.println("zonedDateTime with India timezone = " + zonedDateTime.now(TimeZone.INDIA_TZ));
+        System.out.println("zonedDateTime with India timezone = " + DateTime.now(TimeZone.INDIA_TZ));
 
-        String isoFormatted = ISODateTimeFormat.dateTime().print(zonedDateTime.now(TimeZone.INDIA_TZ));
+        String isoFormatted = ISODateTimeFormat.dateTime().print(DateTime.now(TimeZone.INDIA_TZ));
         System.out.println("ISO Formatted = " + isoFormatted);
 
         DateTime utahMarch8thAt2AM = new DateTime(2015, 3, 8, 1, 0, TimeZone.UTAH_TZ);

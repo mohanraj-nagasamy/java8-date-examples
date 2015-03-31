@@ -1,7 +1,6 @@
 package com.test.date.example1;
 
 import com.test.date.TimeZone;
-import org.joda.time.Years;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -121,9 +120,9 @@ public class Java8Main {
 
         zonedDateTime = ZonedDateTime.now();
         System.out.println("zonedDateTime with default(system) timezone = " + zonedDateTime);
-        System.out.println("zonedDateTime with India timezone = " + zonedDateTime.now(TimeZone.INDIA));
+        System.out.println("zonedDateTime with India timezone = " + ZonedDateTime.now(TimeZone.INDIA));
 
-        String isoFormatted = DateTimeFormatter.ISO_INSTANT.format(zonedDateTime.now(TimeZone.INDIA));
+        String isoFormatted = DateTimeFormatter.ISO_INSTANT.format(ZonedDateTime.now(TimeZone.INDIA));
         System.out.println("ISO Formatted = " + isoFormatted);
 
         ZonedDateTime utahMarch8thAt2AM = ZonedDateTime.of(LocalDateTime.of(2015, 3, 8, 1, 0), TimeZone.UTAH);
