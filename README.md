@@ -1,4 +1,4 @@
-# java8-date-examples
+# java8-time vs joda-time examples
 
 Most of the examples are taken from these sites:
 
@@ -10,3 +10,9 @@ Most of the examples are taken from these sites:
 ## How to use java8 date apis with JPA
 * https://weblogs.java.net/blog/montanajava/archive/2014/06/17/using-java-8-datetime-classes-jpa
 * http://www.adam-bien.com/roller/abien/entry/new_java_8_date_and
+
+## joda-time
+* https://github.com/JodaOrg/joda-time
+
+### joda-time with hibernate/jpa
+* https://github.com/JodaOrg/joda-time-hibernate
