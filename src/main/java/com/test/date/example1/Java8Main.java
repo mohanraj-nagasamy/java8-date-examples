@@ -4,6 +4,7 @@ import com.test.date.TimeZone;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Calendar;
 import java.util.Date;
@@ -180,6 +181,12 @@ public class Java8Main {
         Period periodAtOct = Period.ofYears(yearsAtOctanner).withMonths(monthsAtOctanner);
         System.out.println("periodAtOct = " + periodAtOct);
 
+        LocalDateTime utah = LocalDateTime.now().withHour(10).withMinute(10).withSecond(10);
+        LocalDateTime india = LocalDateTime.now(TimeZone.INDIA).withHour(10).withMinute(10).withSecond(10);
+        long betweenHours = ChronoUnit.HOURS.between(utah, india);
+        long betweenMins = ChronoUnit.MINUTES.between(utah, india);
+        System.out.println("betweenHours = " + betweenHours);
+        System.out.println("betweenMins = " + (betweenMins/60.0));
     }
 
     private static void example12() {

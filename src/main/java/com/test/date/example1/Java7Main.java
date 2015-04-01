@@ -188,6 +188,14 @@ public class Java7Main {
         YearMonth periodAtOct = new YearMonth(yearsAtOctanner, monthsAtOctanner);
         System.out.println("periodAtOct = " + periodAtOct);
 
+        LocalDateTime utah = LocalDateTime.now(TimeZone.UTAH_TZ);
+        LocalDateTime india = LocalDateTime.now(TimeZone.INDIA_TZ);
+        System.out.println("utah = " + utah);
+        System.out.println("india = " + india);
+        Hours betweenHours = Hours.hoursBetween(utah, india);
+        Minutes betweenMins = Minutes.minutesBetween(utah, india);
+        System.out.println("betweenHours = " + betweenHours.getHours());
+        System.out.println("betweenMins = " + (betweenMins.getMinutes()/60.0));
     }
 
     private static void example12() {

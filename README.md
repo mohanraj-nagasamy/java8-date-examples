@@ -13,6 +13,7 @@ Most of the examples are taken from these sites:
 
 ## joda-time
 * https://github.com/JodaOrg/joda-time
+* http://www.joda.org/joda-time/apidocs/index.html
 
 ### joda-time with hibernate/jpa
 * https://github.com/JodaOrg/joda-time-hibernate
