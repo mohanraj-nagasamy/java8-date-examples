@@ -181,8 +181,8 @@ public class Java8Main {
         Period periodAtOct = Period.ofYears(yearsAtOctanner).withMonths(monthsAtOctanner);
         System.out.println("periodAtOct = " + periodAtOct);
 
-        LocalDateTime utah = LocalDateTime.now().withHour(10).withMinute(10).withSecond(10);
-        LocalDateTime india = LocalDateTime.now(TimeZone.INDIA).withHour(10).withMinute(10).withSecond(10);
+        LocalDateTime utah = LocalDateTime.now();
+        LocalDateTime india = LocalDateTime.now(TimeZone.INDIA);
         long betweenHours = ChronoUnit.HOURS.between(utah, india);
         long betweenMins = ChronoUnit.MINUTES.between(utah, india);
         System.out.println("betweenHours = " + betweenHours);
