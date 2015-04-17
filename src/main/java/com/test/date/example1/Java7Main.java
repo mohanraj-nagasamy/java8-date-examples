@@ -73,7 +73,6 @@ public class Java7Main {
         LocalDateTime time = LocalDateTime.now();
         LocalDateTime nextHour = time.plusHours(1);
 
-
         System.out.println("today = " + today);
         System.out.println("1) tomorrow = " + tomorrow + " \n2) tomorrow = " + today.plus(Days.ONE));
         System.out.println("local time now = " + time);
@@ -89,7 +88,7 @@ public class Java7Main {
         System.out.println("Date after 1 year : " + nextYear);
 
 //        LocalDate firstDayOfMonth = LocalDate.now().withDayOfMonth(TemporalAdjusters.firstDayOfMonth());
-        int firstDayOfMonth = LocalDate.now().toDateTimeAtStartOfDay().dayOfMonth().getMaximumValue();
+        int firstDayOfMonth = LocalDate.now().toDateTimeAtStartOfDay().dayOfMonth().getMinimumValue();
         System.out.println("firstDayOfMonth = " + firstDayOfMonth);
         int lastDayOfFeb = LocalDate.now().minusMonths(1).toDateTimeAtStartOfDay().dayOfMonth().getMinimumValue();
         System.out.println("lastDayOfFeb = " + lastDayOfFeb);
